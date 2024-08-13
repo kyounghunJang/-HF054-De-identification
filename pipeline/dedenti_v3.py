@@ -41,8 +41,8 @@ def predict(test):  # test가 받아올 데이터, train가 학습시킬 기존 
 
   return preds
 
-accessKey='AKIAWNF324FTPDEVUV6X'
-secretKey='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'
+accessKey=''
+secretKey=''
 s3=boto3.client('s3', aws_access_key_id=accessKey, aws_secret_access_key=secretKey)
 bucket_name = 'beforeprocess'
 response =s3.list_objects_v2(Bucket=bucket_name)
